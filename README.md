@@ -16,7 +16,7 @@ https://qiufeihong2018.github.io/qiufeihong_resume/
 
 ```bash
   git clone git@github.com:qiufeihong2018/qiufeihong_resume.git
-  cd animate_resume_ts
+  cd qiufeihong_resume
   npm install
   gulp
 ```
