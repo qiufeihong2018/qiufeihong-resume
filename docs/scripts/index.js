@@ -5847,6 +5847,9 @@ Front End Engineer
 # Work Experience
 
 * 谷逸科技
+
+# Projects
+DeepDefence-Web
 `;
 },{}],5:[function(require,module,exports){
 "use strict";
