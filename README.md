@@ -2,7 +2,7 @@
 
 ## 在线观看 view online
 
-https://qiufeihong2018.github.io/qiufeihong_resume/
+http://106.14.169.12:2019/
 
 ## 关于 features
 
