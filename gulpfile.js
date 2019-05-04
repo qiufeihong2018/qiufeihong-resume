@@ -13,11 +13,11 @@ const cssMin = require('gulp-css')
 const htmlMin = require('gulp-htmlmin')
 const browserSync = require("browser-sync").create()
 
-gulp.task('delete', function (cb) {
+gulp.task('delete', (cb) => {
   return del(['docs/*'], cb)
 })
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
   gulp.src('./src/styles/index.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(cssMin())
@@ -36,18 +36,18 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist/'))
 })
 
-gulp.task("ts", function () {
+gulp.task("ts", () => {
   browserify({
     basedir: '.',
     debug: true,
     entries: ['src/scripts/index.ts'],
     cache: {},
     packageCache: {},
-    standalone:'umd'
+    standalone: 'umd'
   })
     .plugin(tsify)
     .bundle()
-    .on('error', (error)=>console.log(error))
+    .on('error', (error) => console.log(error))
     .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
@@ -61,11 +61,11 @@ gulp.task("ts", function () {
     entries: ['src/scripts/animateResume/index.ts'],
     cache: {},
     packageCache: {},
-    standalone:'umd'
+    standalone: 'umd'
   })
     .plugin(tsify)
     .bundle()
-    .on('error', (error)=>console.log(error))
+    .on('error', (error) => console.log(error))
     .pipe(source('animateResume.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
@@ -75,8 +75,7 @@ gulp.task("ts", function () {
     .pipe(gulp.dest("dist/"))
 })
 
-
-gulp.task('html', function () {
+gulp.task('html', () => {
   var options = {
     removeComments: true,
     collapseWhitespace: true,
@@ -91,16 +90,16 @@ gulp.task('html', function () {
     .pipe(browserSync.reload({stream: true}))
 })
 
-gulp.task('copy', function () {
+gulp.task('copy', () => {
   gulp.src(['src/images/**/*.png', 'src/images/**/*.jpg', 'src/images/**/*.svg'])
     .pipe(gulp.dest('docs/images'))
 })
 
-gulp.task('build', ['delete'], function () {
+gulp.task('build', ['delete'], () => {
   return gulp.start('html', 'sass', 'ts', 'copy')
 })
 
-gulp.task('default', ['delete'], function () {
+gulp.task('default', ['delete'], () => {
   gulp.start('html', 'sass', 'ts', 'copy')
   browserSync.init({
     port: (new Date).getFullYear(),

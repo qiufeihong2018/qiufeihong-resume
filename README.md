@@ -1,6 +1,6 @@
 # 动态简历
 
-## 在线观看 view online
+## 在线观看
 
 http://106.14.169.12:2019/
 
@@ -12,12 +12,17 @@ http://106.14.169.12:2019/
 - 移动端使用了 better-scroll 优化体验
 
 
-## 本地查看
+## 启动方式
 
 ```bash
+# clone item
   git clone git@github.com:qiufeihong2018/qiufeihong_resume.git
   cd qiufeihong_resume
+  
+# install dependencies
   npm install
+  
+# serve with hot reload at localhost:2019
   gulp
 ```
 
