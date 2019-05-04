@@ -33,6 +33,5 @@ style 和 resume 在 `src/load/` 下的对应js中
   gulp build
 ```
 
-参考：
-
-> http://strml.net/
+## 参考：
+http://strml.net/
