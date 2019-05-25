@@ -4,7 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "server": "pm2 start app.js --name='qiufeihong_resume'"
   },
   "author": "qiufeihong2018@126.com",
   "license": "ISC",
@@ -43,6 +45,11 @@
     "@types/better-scroll": "^1.12.1",
     "@types/marked": "^0.5.0",
     "@types/node": "^10.12.18",
-    "@types/prismjs": "^1.9.0"
+    "@types/prismjs": "^1.9.0",
+    "chalk": "^2.4.2",
+    "express": "^4.17.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "pm2": "^3.5.0"
   }
 }

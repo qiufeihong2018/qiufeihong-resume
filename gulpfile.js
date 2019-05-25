@@ -99,6 +99,7 @@ gulp.task('build', ['delete'], () => {
   return gulp.start('html', 'sass', 'ts', 'copy')
 })
 
+// 打包到docs
 gulp.task('default', ['delete'], () => {
   gulp.start('html', 'sass', 'ts', 'copy')
   browserSync.init({

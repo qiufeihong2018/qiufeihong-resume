@@ -5955,7 +5955,6 @@ Bootstrap+jQuery+UEditor+Maven+layUI
 
 * 项目链接：http://111.231.55.41/
 `;
-
 },{}],5:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -6107,7 +6106,6 @@ exports.style2 = `/**
  * Ertainly，most of sentences is from that, my English is very poor~ after all.
  *
  */`;
-
 },{"../scripts/animateResume/untils/untils":8}],6:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -6218,7 +6216,6 @@ class AnimateResume {
     }
 }
 exports.default = AnimateResume;
-
 },{"./untils/mobileEndAnimate":7,"./untils/untils":8,"marked":2,"prismjs":3}],7:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -6286,7 +6283,6 @@ function mobileEndAnimate(styleID, resumeID) {
     });
 }
 exports.default = mobileEndAnimate;
-
 },{"better-scroll":1}],8:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -6333,7 +6329,6 @@ function getStyleEl() {
     return allStyle[allStyle.length - 1];
 }
 exports.getStyleEl = getStyleEl;
-
 },{}],9:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -6374,7 +6369,6 @@ skipBtn.addEventListener('click', function () {
 ar.animate(() => {
     skipBtn.style.display = 'none';
 });
-
 },{"../load/resume":4,"../load/style":5,"./animateResume/index":6}]},{},[9])(9)
 });
 
