@@ -2,7 +2,7 @@
 
 ## 在线观看
 
-http://106.14.169.12:2019/
+http://resume.qiufeihong.top/
 
 ## 关于 features
 
