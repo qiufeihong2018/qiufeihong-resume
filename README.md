@@ -2,7 +2,7 @@
 
 ## 在线观看
 
-http://resume.qiufeihong.top/
+~~[http://resume.qiufeihong.top/](http://resume.qiufeihong.top/)~~
 
 ## 关于 features
 
